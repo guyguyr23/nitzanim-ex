@@ -10,13 +10,10 @@ pipeline {
                 sh 'export FLASK_ENV=development'
                 sh 'pwd'
                 sh 'ls'
-                dir("src/app"){
-                    sh 'pwd'                    
-                    sh 'pip install --editable .'
-                    sh 'ls -a'
-                    sh 'flask init-db'
-                }
-  
+                sh 'pwd'                    
+                sh 'pip install --editable /src/app'
+                sh 'ls -a'
+                sh 'flask init-db'
             }
         }
     }
