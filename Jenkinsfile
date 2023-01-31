@@ -9,7 +9,7 @@ pipeline {
                 sh 'export FLASK_APP=flaskr'
                 sh 'export FLASK_ENV=development'
                 sh 'pwd'
-                sh 'ls'
+                sh 'ls -a /'
                 sh 'pwd'                    
                 sh 'pip install --editable "src/app"'
                 sh 'ls -a'
