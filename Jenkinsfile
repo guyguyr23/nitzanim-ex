@@ -5,7 +5,6 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                apt-get update
                 apt-get install python3
                 export FLASK_APP=flaskr
                 export FLASK_ENV=development
