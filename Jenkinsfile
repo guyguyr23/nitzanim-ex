@@ -10,7 +10,7 @@ pipeline {
                 sh 'export FLASK_ENV=development'
                 sh 'pwd'
                 sh 'ls'
-                sh 'cd src/app'
+                sh 'cd src'
                 sh 'pwd'
                 sh 'ls'
                 sh 'pip install --editable .'
