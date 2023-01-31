@@ -1,7 +1,10 @@
 
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'python:3.10.7-alpine' args '--user=root' } }
+    agent {         docker {
+            image 'ubuntu:latest'
+            args '--user=root'
+        } }
     
     stages {
         stage('build') {
