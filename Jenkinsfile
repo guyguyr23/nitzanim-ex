@@ -12,7 +12,7 @@ pipeline {
                 sh 'ls'
                 dir("src/app"){
                     sh 'pwd'
-                    sh 'ls'
+                    sh 'ls -a'
                     sh 'pip install --editable .'
                     sh 'flask init-db'
                 }
