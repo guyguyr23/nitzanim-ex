@@ -11,7 +11,7 @@ pipeline {
                 sh 'pwd'
                 sh 'ls'
                 sh 'pwd'                    
-                sh 'pip install --editable "/src/app"'
+                sh 'pip install --editable "src/app"'
                 sh 'ls -a'
                 sh 'flask init-db'
             }
