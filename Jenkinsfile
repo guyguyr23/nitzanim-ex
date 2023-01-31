@@ -13,8 +13,8 @@ pipeline {
                 dir("src/app"){
                     sh 'pwd'
                     sh 'ls'
-                    sh 'pip install --editable .'
-                    sh 'flask init-db'
+                    sh 'sudo pip install --editable .'
+                    sh 'sudo flask init-db'
                 }
   
             }
